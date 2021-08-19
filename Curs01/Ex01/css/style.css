@@ -34,7 +34,23 @@ body > h1 {
   display: none;
 }
 
+body > h2 {
+  display: none;
+}
+
+body > h3 {
+  display: none;
+}
+
 @media (max-width: 576px) {
+  body {
+    padding: 15px;
+  }
+
+  .box-1 {
+    display: none;
+  }
+
   .box-2 {
     display: none;
   }
@@ -44,23 +60,39 @@ body > h1 {
   .box-3 {
     border: 1px solid green;
   }
+
   .box-5 {
     color: white;
   }
 }
 
 @media (max-width: 992px) {
+  .box-2 {
+    border-color: yellow;
+    color: white;
+  }
+
   .box-4 {
     display: none;
   }
 }
 
 @media (min-width: 992px) {
+  .box-1 {
+    display: none;
+  }
+
   .box-3 {
     display: none;
   }
 
   .box-4 {
+    color: red;
+  }
+}
+
+@media (min-width: 1000px) {
+  body > h3 {
     color: red;
   }
 }
@@ -76,3 +108,16 @@ body > h1 {
     display: block;
   }
 }
+
+@media (max-width: 1000px) and (min-width: 500px) {
+  body > h2 {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  body > h3 {
+    display: none;
+  }
+}
+/* aici ma obliga pixeltab sa ii pun lui h3 valoarea none din start */

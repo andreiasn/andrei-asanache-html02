@@ -1,3 +1,7 @@
+$magenta: magenta;
+$lightcoral: lightcoral;
+$pink: pink;
+
 ul {
   a {
     text-decoration: none;
@@ -32,5 +36,29 @@ ul {
   .reverse & {
     padding: 10px 20px;
     width: 100%;
+  }
+}
+
+ol {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $magenta;
+    }
+
+    &:active {
+      color: $pink;
+    }
+
+    &:visited {
+      color: $lightcoral;
+    }
+  }
+}
+
+.all-visited {
+  a {
+    text-decoration: line-through;
   }
 }
