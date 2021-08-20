@@ -3,31 +3,78 @@
   border: 1px solid black;
   padding: 10px;
   margin: 0 auto;
-  // pixeltab bug
+  // bug in pixeltab:
   margin: auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-%square {
+.square {
   width: 200px;
   height: 200px;
   border: 1px solid black;
   background-color: turquoise;
+
+  .span {
+    border: red;
+  }
 }
 
-.square-purple {
-  @extend %square;
+.square-magenta {
+  @extend .square;
 
-  background-color: purple;
+  background-color: magenta;
 }
 
 .square-peru {
-  @extend %square;
+  @extend .square;
 
   background-color: peru;
 }
 
-.square-magenta {
-  @extend %square;
+.square-purple {
+  @extend .square;
 
-  background-color: magenta;
+  background-color: purple;
+  width: 200px;
+}
+
+.circles {
+  width: 80%;
+  height: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+  // bug pixeltab
+  margin: auto;
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: brown;
+}
+
+.circle-red {
+  @extend .circle;
+
+  background-color: red;
+  border-radius: 50%;
+}
+
+.circle-green {
+  @extend .circle;
+
+  background-color: green;
+  border-radius: 50%;
+}
+
+.circle-blue {
+  @extend .circle;
+
+  background-color: blue;
+  border-radius: 50%;
 }
