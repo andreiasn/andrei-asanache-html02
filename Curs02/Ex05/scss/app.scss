@@ -16,8 +16,24 @@
       background-color: gray;
       color: #fff;
       text-align: center;
+      border: #{$i}px solid black;
     } @else {
-      border: 1px dotted brown;
+      border: #{$i}px dotted brown;
+      text-align: center;
+    }
+  }
+}
+
+@for $i from 1 through 9 {
+  .box-#{$i} {
+    @if $i % 2 == 0 {
+      background-color: gray;
+      color: #fff;
+      text-align: center;
+      border: #{$i}px solid black;
+    } @else {
+      border: #{$i}px dotted green;
+      text-align: center;
     }
   }
 }

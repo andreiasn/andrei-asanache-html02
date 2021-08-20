@@ -30,3 +30,9 @@ $spacings: (
     margin: $spacing;
   }
 }
+
+@each $size, $spacing in $spacings {
+  .p-#{$size} {
+    padding: $spacing;
+  }
+}
