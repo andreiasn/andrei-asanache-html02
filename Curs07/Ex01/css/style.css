@@ -1,0 +1,71 @@
+@keyframes bar-01 {
+  from {
+    width: 50px;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.bar-01 {
+  animation: bar-01 10s ease-in forwards;
+}
+
+/* add bar-02 */
+
+@keyframes bar-03 {
+  0% {
+    width: 100%;
+    background-color: blue;
+  }
+
+  25% {
+    width: 75%;
+    background-color: yellow;
+  }
+
+  50% {
+    width: 200px;
+    background-color: red;
+  }
+
+  75%,
+  100% {
+    width: 5px;
+    background-color: blue;
+  }
+
+  100% {
+  }
+}
+
+.bar-03 {
+  animation: bar-03 12s ease-in forwards;
+}
+
+@keyframes bar-05 {
+  0% {
+    width: 100%;
+    background-color: green;
+  }
+
+  25% {
+    width: 500px;
+    background-color: red;
+  }
+
+  75% {
+    width: 75%;
+    background-color: green;
+  }
+
+  100% {
+    width: 500px;
+    background-color: orange;
+  }
+}
+
+.bar-05 {
+  animation: bar-05 8s linear forwards;
+}
