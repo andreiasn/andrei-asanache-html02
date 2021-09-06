@@ -17,10 +17,159 @@
     rel="stylesheet"
     href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
   >
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
 </head>
 
 <body>
+  <header class="container">
+    <h1>Formular produs</h1>
+  </header>
 
+  <main class="container pb-5 mb-5">
+    <form action="">
+      <fieldset class="row mb-2">
+        <legend>Produs</legend>
+
+        <section class="col-12 col-lg-6 mb-2 mb-lg-0">
+          <div class="mb-5">
+            <label
+              for="main-image"
+              class="form-label"
+            >Imaginea principala *</label>
+
+            <input
+              type="file"
+              name="main-image"
+              id="main-image"
+              class="form-control"
+              placeholder="No file chosen"
+              required
+            >
+          </div>
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="recipe-author"
+                class="input-group-text"
+              >Categorie *</label>
+            </div>
+
+            <select
+              name="category"
+              id="category"
+              class="flex-grow-1 form-control"
+            >
+              <option value="">-categorie-</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="recipe-author"
+                class="input-group-text"
+              >Brand *</label>
+            </div>
+
+            <select
+              name="brand"
+              id="brand"
+              class="flex-grow-1 form-control"
+            >
+              <option value="">-brand-</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="recipe-author"
+                class="input-group-text"
+              >Furnizor *</label>
+            </div>
+
+            <select
+              name="provider"
+              id="provider"
+              class="flex-grow-1 form-control"
+            >
+              <option value="">-furnizor-</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="col-12 col-lg-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                class="input-group-text h-100"
+                for="product-name"
+              >
+                Numele produsului *
+              </label>
+            </div>
+
+            <textarea
+              name="product-name"
+              id="product-name"
+              cols="30"
+              rows="1"
+              class="form-control"
+              required
+              placeholder="Numele produsului *"
+            ></textarea>
+          </div>
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                class="input-group-text h-100"
+                for="long-description"
+              >
+                Descriere lunga *
+              </label>
+            </div>
+
+            <textarea
+              name="long-description"
+              id="long-description"
+              cols="30"
+              rows="6"
+              class="form-control"
+              required
+              placeholder="Descriere lunga *"
+            ></textarea>
+          </div>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <label
+                class="input-group-text h-100"
+                for="short-description"
+              >
+                Descriere scurta *
+              </label>
+            </div>
+
+            <textarea
+              name="short-description"
+              id="short-description"
+              cols="30"
+              rows="4"
+              class="form-control"
+              required
+              placeholder="Descriere scurta *"
+            ></textarea>
+          </div>
+        </section>
+      </fieldset>
+    </form>
+  </main>
   <div
     class="pixeltab-host"
     id="html02-05-14"

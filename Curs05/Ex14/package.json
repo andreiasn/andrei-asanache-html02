@@ -1,0 +1,17 @@
+{
+  "name": "ex14",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass ./scss/app.scss ./css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "sass": "^1.38.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}
